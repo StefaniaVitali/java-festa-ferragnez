@@ -24,11 +24,20 @@ Lista invitati: Dua Lipa, Paris Hilton, Manuel Agnelli, J-Ax, Francesco Totti, I
 	    //chiedere all'utente il suo nome e cognome		
 		System.out.println("Se vuoi partecipare alla festa esclusiva devi prima darci il tuo nome e cognome");
 		String invitato = input.nextLine();
-				
-		//verificare se il nome è presente nella lista degli invitati con ciclo for
-		
+		  		
+		//verificare se il nome è presente nella lista degli invitati con ciclo for	
+	
 		for (int i = 0; i<invitati.length; i++) {
-			System.out.println(invitati[i]);
+			
+//			System.out.println(invitati[i]);
+			
+			
+			if (invitati[i].contains(invitato)) {
+				System.out.println("complimenti sei stato invitato");
+			} else {
+				System.out.println("Non sei stato invitato");
+			}
+			 
 		}
 	
 	}
