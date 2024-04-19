@@ -1,5 +1,7 @@
 package com.ferragnez.party;
 
+import java.util.Scanner;
+
 public class CheckGuest {
 	
 	/* nome repo: java-festa-ferragnez
@@ -12,10 +14,23 @@ Lista invitati: Dua Lipa, Paris Hilton, Manuel Agnelli, J-Ax, Francesco Totti, I
 	
 	public static void main (String [] args ) {
 		
+		//prepariamo l'input da tastiera 
+		Scanner input = new Scanner(System.in); 
+		
 		//inizializzare l'array di invitati
-		
 		String [] invitati = {"Dua Lipa", "Paris Hilton", "Manuel Agnelli", "J-Ax", "Francesco Totti","Ilary Blasi", "Bebe Vio","Luis","Pardis Zarei", "Martina Maccherone","Rachel Zeilic" };
+				
 		
+	    //chiedere all'utente il suo nome e cognome		
+		System.out.println("Se vuoi partecipare alla festa esclusiva devi prima darci il tuo nome e cognome");
+		String invitato = input.nextLine();
+				
+		//verificare se il nome è presente nella lista degli invitati con ciclo for
+		
+		for (int i = 0; i<invitati.length; i++) {
+			System.out.println(invitati[i]);
+		}
+	
 	}
 
 }
