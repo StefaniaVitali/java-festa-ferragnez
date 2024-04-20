@@ -35,12 +35,15 @@ Lista invitati: Dua Lipa, Paris Hilton, Manuel Agnelli, J-Ax, Francesco Totti, I
 			if (invitati[i].contains(invitato)) {
 				System.out.println("complimenti sei stato invitato");
 				break;
-			} else {
+			} 
+			
+			if(i == invitati.length-1) {
 				System.out.println("Non sei stato invitato");
 			}
-			 
 		}
 	
 	}
+	
+	// correzione compito equals era meglio perché controlla se il contenuto è lo stesso
 
 }
