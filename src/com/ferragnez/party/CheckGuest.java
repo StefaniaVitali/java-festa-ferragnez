@@ -29,10 +29,10 @@ Lista invitati: Dua Lipa, Paris Hilton, Manuel Agnelli, J-Ax, Francesco Totti, I
 	
 		for (int i = 0; i<invitati.length; i++) {
 			
-//			System.out.println(invitati[i]);
+           //System.out.println(invitati[i]);
 			
-			
-			if (invitati[i].contains(invitato)) {
+		
+		    if (invitati[i].contains(invitato)) {
 				System.out.println("complimenti sei stato invitato");
 				break;
 			} 
@@ -42,8 +42,45 @@ Lista invitati: Dua Lipa, Paris Hilton, Manuel Agnelli, J-Ax, Francesco Totti, I
 			}
 		}
 	
+		
+		
+	
 	}
 	
-	// correzione compito equals era meglio perché controlla se il contenuto è lo stesso
-
 }
+
+
+
+/* --------------CORREZIONE ESERCIZIO ----------------
+1) EQUALS era meglio perché controlla se il contenuto è equivalente a quello contenuto
+nella cella di memoria, mentre CONTAINS guarda anche i sottoinsiemi
+
+2) ci salviamo una variabile booleana fuori dal ciclo for
+  
+        boolean ammesso = false;
+  
+        for (int i = 0; i<invitati.length; i++) {           		
+				if (invitati[i].equals(invitato)) {
+				ammesso = true;
+				break;
+			} 		
+			
+		}
+		
+		if(trovato) {
+		  System.out.println("complimenti sei stato invitato");
+		} else{
+		   System.out.println("complimenti sei stato invitato");		
+		}
+ 
+  Salvare un valore in una variabile fuori dal ciclo for, permette maggiore flessibilità nel codice 
+  e di usare la variabile anche al di fuori del ciclo 
+  
+  
+ 3) alla fine della parte di codice con cui ci serve interagire con la tastiera, il canale di comunicazione
+    con la tastiera aperto da Scanner va chiuso:  Scanner = input.close;
+  
+  
+ */
+
+
